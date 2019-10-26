@@ -1,6 +1,15 @@
 const config = require("../config")
 const { Client } = require("pg")
 
-const Client = new Client(config.databaseConfig)
+const client = new Client(config.databaseConfig)
 
-module.exports = Client
+exports.client = client;
+
+exports.connect = async function(){
+    try{
+        await client.connect();
+    }catch(e){
+        console.log("Fallo la conexion a la base de datos", e)
+    }
+}
+
