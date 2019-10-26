@@ -1,7 +1,19 @@
-<!--INVOCANDO CABEZERA CONTENIDO Y PIE-->
-<% 
-include header.ejs  
-include content.ejs
-include footer.ejs
-%>
-
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Inicio</title>
+    <% include ../partials/headers %>
+    <link rel="stylesheet" type="text/css" href="css/services.css">
+</head>
+<body>
+    <div class="menu">
+        <h2 class="title">Servi</h2>
+        <div class="buscador">
+            <form class="form-inline">
+                <input type="text" name="busqueda" placeholder="Buscar..." class="form-control">
+                <input type="submit" name="buscar" value="Buscar" class="btn btn-primary">
+            </form>
+        </div>
+    </div>
+</body>
+</html>
