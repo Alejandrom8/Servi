@@ -1,5 +1,5 @@
 const database = require("../service/connection");
-const { serviceResponse } = require("../controllers/responseModel") 
+const serviceResponse = require("../controllers/responseModel") 
 
 async function loginModel(data){
     const res = new serviceResponse();

@@ -31,5 +31,7 @@ async function sendData(data){
 }
 
 function manageResponse(res){
-    console.log(res)
+    if(res.success){
+        win
+    }
 }
