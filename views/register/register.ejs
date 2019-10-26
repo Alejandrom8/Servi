@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html class="no-js">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Inicio de sesión</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="">
+    <style>
+        h1 {
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-size: 1.5rem;
+            font-weight: bold;
+            text-align: center;
+            border-bottom: 1px solid rgba(26, 22, 78, 0.76);
+        }
+        
+        h2 {
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-size: 1rem;
+            font-weight: bold;
+            text-align: center;
+        }
+        
+        div {
+            text-align-last: center;
+            line-height: 35px;
+        }
+        
+        p {
+            text-align: center;
+        }
+        
+        body {
+            background: white;
+            background-attachment: fixed;
+            background-size: cover;
+        }
+        
+        .register-box {
+            width: 30%;
+            height: 100%;
+            margin: 0 auto;
+            border: 2px solid rgba(26, 22, 78, 0.76);
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<div class="register-box">
+
+    <body>
+
+        <h1>Registro</h1>
+        <h2>Completa el formulario correctamente</h2>
+        <!--<div class="col-md-6">-->
+        <div class="form-group">
+            <label for="text">Nombre</label><br>
+            <input type="text" class="form-control" id="nombre" max="50" required>
+        </div>
+        <div class="form-group">
+            <label for="text">Apellido Paterno</label><br>
+            <input type="text" class="form-control" id="apellido A" max="50" required>
+        </div>
+        <div class="form-group">
+            <label for="text">Apellido Materno</label><br>
+            <input type="text" class="form control" id="Apellido B" max="50" required>
+        </div>
+
+        <p>Genero:</p>
+        <div class="form-group">
+            <label for="checkbox">Masculino</label>
+            <input type="checkbox" class="form-control" id="genero" maxlength="50" required>
+        </div>
+        <div class="form-group">
+            <label for="checkbox">Femenino</label>
+            <input type="checkbox" class="form-control" id="genero" maxlength="50" required>
+        </div><br>
+        <!--<div clas="col -md-6"></div>-->
+        <div class="form-group">
+            <label for="email"> Correo Electronico</label><br>
+            <input type="email" class="form-control" id="email" maxlength="50" required>
+        </div>
+        <div class="form-group">
+            <label for="textarea"> Escribe una breve descripción de ti</label><br>
+            <textarea name="descripcion" id="descripcion" cols="30" rows="10" maxlength="300"></textarea>
+        </div>
+        <div class="form-group">
+            <label for=""> Sube una imagen de perfil</label><br>
+            <input type="file">
+        </div>
+        <div class="form-group">
+            <label for="button"></label><br>
+            <input type="submit" value="Enviar">
+        </div>
+
+
+        </form>
+</div>
+
+
+<script src="" async defer></script>
+</body>
+
+</html>
