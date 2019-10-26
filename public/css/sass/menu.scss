@@ -1,0 +1,68 @@
+.menu{
+    width:100%;
+    height:auto;
+    position:fixed;
+    background-color:#fff;
+    color:#222;
+    display:flex;
+    justify-content: flex-end;
+    align-content: center;
+    align-items:center;
+    padding:0 2%;
+
+    font-family: "montserrat";
+    border-bottom:4px solid orange;
+
+    .logo{
+        margin-right:0;
+        width:40px;
+        height:40px;
+        border-radius:50%;
+    }
+
+    .title{
+        margin-right:auto;
+        margin-left:2%;
+        color:#222;
+        font-weight: bold;
+        font-size:1.5rem;
+        margin-top:1%;
+    }
+
+    nav{
+        width:40%;
+        height:auto;
+        align-content: center;
+
+        ul{
+            width:100%;
+            height:100%;
+            display:flex;
+            align-items: center;
+            align-content:center;
+            justify-content: space-around;
+            margin-bottom: 0;
+
+            .option{
+                list-style: none;
+                display:inline-block;
+                margin:4.5% 5%;
+                
+                a{
+                    color:#222;
+                    cursor:pointer;
+                    text-decoration: none;
+                    font-size:0.9rem;
+                }
+
+                a:active{
+                    color:#333;
+                }
+
+                a:hover{
+                    color:#000;
+                }
+            }
+        }
+    }
+}
