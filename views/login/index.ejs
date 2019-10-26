@@ -3,59 +3,19 @@
 <head>
     <% include ../partials/headers %>
     <title>Iniciar sesión</title>
-    <style>
-
-        * {
-            font-family: sans-serif;
-        }
-
-        body{
-            background-color: white;
-            background-size:cover;
-        }
-
-        h1{
-            border-bottom: 4px rgb(255, 94, 0) solid;
-            text-align: center;
-        }
-        .webpage{
-            width:100%;
-            height:100vh;
-            display:flex;
-            justify-content: space-around;
-            align-content: center;
-            align-items: center;
-            color: black;
-        }
-        .login-box{
-            width:30%;
-            height:80%;
-            margin:0 auto;
-            padding:5%;    
-            background: none;
-        }
-        @media screen and (max-width: 700px){
-            .login-box{
-                width:80%;
-            }
-        }
-        .borde {
-            border: none;
-            outline: none;
-            background: none;
-            border-bottom: 1px solid rgb(47, 40, 136);
-        }
-  
-    </style>
+    <link rel="stylesheet" type="text/css" href="css/login.css">
 </head>
 <body>
     <div class="webpage">
         <div class="login-box">
+        <form method="POST" id="login" action="/login">
+            <center>
+                    <img class="logo" src="img/Tetlay.png" style="width:40%;height:auto;border-radius:50%;padding:5%;">
+                </center>
         <div>
             <h1>Iniciar sesión</h1>
         </div>
         <div><br><br></div>
-             <form method="POST" id="login" action="/login">
                 <div class="form-group">
                     <img src="icons/email.png" width= "30px" height="30px" >
                     <label for="">Correo electrónico: </label>
