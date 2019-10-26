@@ -3,10 +3,32 @@
 <head>
     <% include ../partials/headers %>
     <title>Servi</title>
+    <link rel="stylesheet" type="text/css" href="swiper/css/swiper.min.css">
+    <script src="swiper/js/swiper.js"></script>
+    <script src="swiper/js/swiper.min.js"></script>
     <link rel="stylesheet" type="text/css" href="css/main.css">
 </head>
 <body>
-    <% include ../partials/menu %>
-    servi
+    <div class="webpage">
+        <% include ../partials/menu %>
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">Slide 1</div>
+                <div class="swiper-slide">Slide 2</div>
+                <div class="swiper-slide">Slide 3</div>
+                <div class="swiper-slide">Slide 4</div>
+                <div class="swiper-slide">Slide 5</div>
+                <div class="swiper-slide">Slide 6</div>
+                <div class="swiper-slide">Slide 7</div>
+                <div class="swiper-slide">Slide 8</div>
+                <div class="swiper-slide">Slide 9</div>
+                <div class="swiper-slide">Slide 10</div>
+            </div>
+            <!-- Add Pagination -->
+            <div class="swiper-pagination"></div>
+        </div>                
+        <% include ../partials/footer %>
+    </div>
+    <script src="js/carrusel.js"></script>
 </body>
 </html>

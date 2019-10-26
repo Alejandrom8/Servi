@@ -30,7 +30,8 @@
     "jquery": "^3.4.1",
     "morgan": "^1.9.1",
     "pg": "^7.12.1",
-    "sweetalert": "^2.1.2"
+    "sweetalert": "^2.1.2",
+    "swiper": "^5.2.0"
   },
   "devDependencies": {
     "jest": "^24.9.0",

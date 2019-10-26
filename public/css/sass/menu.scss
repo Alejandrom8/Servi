@@ -9,6 +9,7 @@
     align-content: center;
     align-items:center;
     padding:0 2%;
+    z-index:10;
 
     font-family: "montserrat";
     border-bottom:4px solid orange;
@@ -61,8 +62,18 @@
 
                 a:hover{
                     color:#000;
+                    border-bottom:2px solid orange;
                 }
             }
         }
+    }
+
+    .login, .signin{
+        background:transparent;
+        margin:0 0.5%;
+    }
+
+    .btn:hover{
+        color:#000;
     }
 }

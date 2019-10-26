@@ -3,6 +3,35 @@
   padding: 0;
 }
 
+.webpage {
+  position: relative;
+  min-height: 100vh;
+}
+
+.swiper-container {
+  width: 100%;
+  height: 80vh;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+
 @font-face {
   src: url(../fonts/Montserrat/Montserrat-Bold.ttf);
   font-family: "montserrat-bold";
@@ -38,6 +67,7 @@
   align-content: center;
   align-items: center;
   padding: 0 2%;
+  z-index: 10;
   font-family: "montserrat";
   border-bottom: 4px solid orange;
 }
@@ -85,6 +115,23 @@
 }
 .menu nav ul .option a:hover {
   color: #000;
+  border-bottom: 2px solid orange;
+}
+.menu .login, .menu .signin {
+  background: transparent;
+  margin: 0 0.5%;
+}
+.menu .btn:hover {
+  color: #000;
+}
+
+.footer {
+  width: 100%;
+  height: auto;
+  padding: 5% 2%;
+  background: #141414;
+  position: absolute;
+  bottom: 0;
 }
 
 /*# sourceMappingURL=main.css.map */

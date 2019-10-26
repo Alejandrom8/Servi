@@ -1,8 +1,12 @@
 const express = require("express")
 const router = express.Router()
 
-router.get("/login", (req, res) => {
+exports.get = router.get("/login", (req, res) => {
     res.render("login/index")
 })
 
-module.exports = router
+exports.post =  router.post("/login", (req, res) => {
+    res.render("login/index")
+})
+
+
