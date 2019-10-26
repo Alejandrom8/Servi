@@ -1,0 +1,44 @@
+[33mcommit ddb2478bf959158dbf0a32f854ee43a0067e7dcf[m[33m ([m[1;36mHEAD -> [m[1;32mmaster[m[33m)[m
+Merge: 48876e0 70a8851
+Author: Alejandro Gómez García <ale.wild.ones@gmail.com>
+Date:   Fri Oct 25 23:27:48 2019 -0500
+
+    Merge branch 'master' of https://github.com/Alejandrom8/Servi
+    
+    Se ha añadido nuevos routers
+
+[33mcommit 48876e09788469902ae00946332c0c8ac3a3c623[m
+Author: Alejandro Gómez García <ale.wild.ones@gmail.com>
+Date:   Fri Oct 25 23:27:30 2019 -0500
+
+    Conexion a postgres creada y partial headers creado
+
+[33mcommit 70a8851397d3af7552aea0cbd8193e111a37361d[m
+Author: EvanderDS <evanderdsk@comunidad.unam.mx>
+Date:   Fri Oct 25 22:40:06 2019 -0500
+
+    Login creado
+
+[33mcommit b706ddfe173b0395fcd1fe9d87aa3a9a59572b11[m
+Author: EvanderDS <evanderdsk@comunidad.unam.mx>
+Date:   Fri Oct 25 22:33:28 2019 -0500
+
+    index.ejs Movido a views
+
+[33mcommit 463e131cb0c4873281dab83e058fd999350db0d3[m
+Author: EvanderDS <evanderdsk@comunidad.unam.mx>
+Date:   Fri Oct 25 22:30:39 2019 -0500
+
+    index.ejs Agregado
+
+[33mcommit 0fa3b9cdff757f0e3dd4297a9b6708eb37aecb8c[m
+Author: Alejandro Gómez García <ale.wild.ones@gmail.com>
+Date:   Fri Oct 25 22:27:30 2019 -0500
+
+    Modulos y vistas agregadas
+
+[33mcommit 12a8cfa6a302de6649b5eaf1bbd76bd11e8fed14[m
+Author: Alejandro Gómez García <ale.wild.ones@gmail.com>
+Date:   Fri Oct 25 21:54:44 2019 -0500
+
+    Cimientos del proyecto

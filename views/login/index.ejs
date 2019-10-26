@@ -1,22 +1,74 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Curso</title>
+    <% include ../partials/headers %>
+    <title>Iniciar sesión</title>
+    <style>
+
+        * {
+            font-family: sans-serif;
+        }
+
+        body{
+            background-color: white;
+            background-size:cover;
+        }
+
+        h1{
+            border-bottom: 4px rgb(255, 94, 0) solid;
+            text-align: center;
+        }
+        .webpage{
+            width:100%;
+            height:100vh;
+            display:flex;
+            justify-content: space-around;
+            align-content: center;
+            align-items: center;
+            color: black;
+        }
+        .login-box{
+            width:30%;
+            height:80%;
+            margin:0 auto;
+            padding:5%;    
+            background: none;
+        }
+        @media screen and (max-width: 700px){
+            .login-box{
+                width:80%;
+            }
+        }
+        .borde {
+            border: none;
+            outline: none;
+            background: none;
+            border-bottom: 1px solid rgb(47, 40, 136);
+        }
+  
+    </style>
 </head>
 <body>
-
-<form>
-    <div class="form-group">
-        <label for="">    </label>
-        <input type="email" class="form-control" maxlength="" name="" id="" required>
+    <div class="webpage">
+        <div class="login-box">
+        <div>
+            <h1>Iniciar sesión</h1>
+        </div>
+        <div><br><br></div>
+             <form>
+                <div class="form-group">
+                    <img src="icons/email.png" width= "30px" height="30px" >
+                    <label for="">Correo electrónico: </label>
+                    <input  type="email" class="form-control borde" placeholder="usuario@email.com" background="none" maxlength="" name="" id="" required>
+                </div>
+                <br>
+                <div class="form-group">
+                    <img src="icons/pass.png" width="30px" height="30px">
+                    <label for="form-group">Contraseña: </label>
+                    <input type="password" class="form-control borde" placeholder="********" maxlength="" name="" id="" required>
+                </div>
+            </form>
+        </div>
     </div>
-    <div>
-        <label for="form-group">    </label>
-        <input type="password" class="form-control" maxlength="" name="" id="" required>
-    </div>
-</form>
 </body>
 </html>
