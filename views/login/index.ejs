@@ -55,20 +55,22 @@
             <h1>Iniciar sesión</h1>
         </div>
         <div><br><br></div>
-             <form>
+             <form method="POST" id="login" action="/login">
                 <div class="form-group">
                     <img src="icons/email.png" width= "30px" height="30px" >
                     <label for="">Correo electrónico: </label>
-                    <input  type="email" class="form-control borde" placeholder="usuario@email.com" background="none" maxlength="" name="" id="" required>
+                    <input  type="email" class="form-control borde" placeholder="usuario@email.com" background="none" maxlength="" name="email" id="email" required>
                 </div>
                 <br>
                 <div class="form-group">
                     <img src="icons/pass.png" width="30px" height="30px">
                     <label for="form-group">Contraseña: </label>
-                    <input type="password" class="form-control borde" placeholder="********" maxlength="" name="" id="" required>
+                    <input type="password" class="form-control borde" placeholder="********" maxlength="" name="password" id="password" required>
                 </div>
+                <input type="submit" class="btn btn-primary btn-block" value="Enviar">
             </form>
         </div>
     </div>
+    <script src="js/loginHandler.js"></script>
 </body>
 </html>
