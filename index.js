@@ -26,7 +26,7 @@ server.get("/servicios", servicios)
 
 //carpeta por defecto para cuando no suceda match con ningun otro router
 server.use(express.static("public"))
-
+server.use(express.static("node_modules"))
 //encendiendo el servidor
 server.listen( config.port, () => {
     console.log(`Server created at port ${config.port}`)
