@@ -4,7 +4,8 @@
   "description": "Servi es un servicio web que permite a trabajadores independientes publicar y ofrecer sus servicios",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "sasea-main": "sass --watch public/css/sass/index.scss public/css/main.css"
   },
   "repository": {
     "type": "git",
