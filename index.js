@@ -6,6 +6,7 @@ const config = require("./config")
 
 //controllers
 const main = require("./controllers/main")
+const login = require("./controllers/login")
 const servicios = require("./controllers/servicios")
 //aplicacion express
 const server = express()
@@ -20,6 +21,7 @@ server.use(morgan("dev"))
 
 //routers
 server.get('/', main)
+server.get("/login", login)
 server.get("/servicios", servicios)
 
 //carpeta por defecto para cuando no suceda match con ningun otro router
