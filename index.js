@@ -1,18 +1,30 @@
-const express = require("expresss")
+//modulos
+const express = require("express")
 const morgan = require("morgan")
 const path = require("path")
 const config = require("./config")
 
+//controllers
+const main = require("./controllers/main")
+
+//aplicacion express
 const server = express()
 
-server.use(express.json())
-server.set("views", path.join(__dirname, "/views"))
+//settings
+server.set("views", path.join(__dirname,"/views"))
 server.set("view engine", "ejs")
 
-server.get("/", main)
+//middlewares
+server.use(express.json())
+server.use(morgan("dev"))
 
+//routers
+server.get('/', main)
+
+//carpeta por defecto para cuando no suceda match con ningun otro router
 server.use(express.static("public"))
 
+//encendiendo el servidor
 server.listen( config.port, () => {
     console.log(`Server created at port ${config.port}`)
 })
