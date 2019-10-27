@@ -62,7 +62,7 @@ function convertToHtml(object){
 
 async function getDataFromApi(){
     try{
-        const request = await fetch("http://www.mocky.io/v2/5db5364c3200005c0018bf0c", {
+        const request = await fetch("http://www.mocky.io/v2/5db5af403200005a0018bff9", {
             method: "GET",
             headers: {
                 "Content-type": "application/json"
@@ -70,7 +70,7 @@ async function getDataFromApi(){
         });
 
         if(request.ok){
-            console.log(await request.json())
+            return await request.json()
         }else{
             throw new Error("Request invalida")
         }
@@ -79,13 +79,43 @@ async function getDataFromApi(){
     }
 }
 
-let finalHtml = "";
+(async ()=> {
+    const servidores = await getDataFromApi();
+    let finalHtml = "";
 
-servidores.forEach( serv => {
-    finalHtml += convertToHtml(serv)
+    servidores.forEach( serv => {
+        finalHtml += convertToHtml(serv)
+    });http://www.mocky.io/v2/5db5ad4a3200006e0018bff8
+
+    box.innerHTML = finalHtml;
+})();
+
+const searcher = document.getElementById("query")
+
+async function getDataFromApiForSearch(data){
+    try{
+        const request = await fetch("http://www.mocky.io/v2/5db5af403200005a0018bff9", {
+            method: "POST",
+            headers: {
+                "Content-type": "application/json"
+            },
+            body: JSON.stringify(data)
+        });
+
+        if(request.ok){
+            return await request.json()
+        }else{
+            throw new Error("Request invalida")
+        }
+
+    }catch(e){
+        console.log(e)
+    }
+}
+
+searcher.addEventListener("keyup", async function (){
+    
 });
-
-box.innerHTML = finalHtml;
 
 // (async function(){
 //     await getDataFromApi();

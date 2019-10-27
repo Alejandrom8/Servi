@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+<<<<<<< HEAD
         <% include ../partials/headers %>
         <title>Perfil</title>
         <link rel="stylesheet" type="text/css" href="css/register.css">
@@ -9,5 +10,28 @@
 <body>
         <% include ../partials/menuLogger %>
         <%= status %>
+=======
+    <% include ../partials/headers %>
+    <title>Perfil</title>
+    <link rel="stylesheet" type="text/css" href="css/profile.css">
+</head>
+<body>
+    <% include ../partials/menuLogger %>
+    <br><br>
+    <div class="col-lg-12 row">
+        <div class="profile-col col-md-4">
+            <center>
+                <br>
+                    <img class="profile-img" src="img/<%= img %>">
+            </center>
+        </div>
+        <div class="col-md-8">
+            <br>
+            <h2><%= nombre %></h2>
+            <br>
+            <p><%= description %></p>
+        </div>
+    </div>
+>>>>>>> 019ec80c4638e87f6041dc92d2f0f32835afe2ae
 </body>
 </html>

@@ -9,7 +9,11 @@ const main = require("./controllers/main")
 const login = require("./controllers/login")
 const servicios = require("./controllers/servicios")
 const registro = require("./controllers/registro")
+<<<<<<< HEAD
 const utilities = require("./controllers/utilities")
+=======
+const profile = require("./controllers/profile")
+>>>>>>> 019ec80c4638e87f6041dc92d2f0f32835afe2ae
 //aplicacion express
 const server = express()
 
@@ -28,10 +32,8 @@ server.get("/login", login.get)
 server.post("/login", login.post)
 server.get("/registro", registro)
 server.get("/servicios", servicios)
-server.get("/profile/:id", async (req, res) => {
-    const dataFounded = await utilities.getDataById(req.params.id);
-    res.render('services/profile', dataFounded);
-});
+server.get("/profile", profile)
+// server.get("/profile/:id", profile.id)
 //carpeta por defecto para cuando no suceda match con ningun otro router
 server.use(express.static("public"))
 server.use(express.static("node_modules"))

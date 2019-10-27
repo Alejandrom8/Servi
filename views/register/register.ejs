@@ -3,6 +3,7 @@
 
 <head>
     <% include ../partials/headers %>
+<<<<<<< HEAD
     <title>Inicio de sesión</title>
     <link rel="stylesheet" type="text/css" href="css/register.css">
 </head>
@@ -125,6 +126,160 @@
         </form>
     </div>
 
+=======
+        <title>Inicio de sesión</title>
+
+        <style>
+            h1 {
+                font-family: Verdana, Geneva, Tahoma, sans-serif;
+                font-size: 1.5rem;
+                font-weight: bold;
+                text-align: center;
+                border-bottom: 1px solid rgba(26, 22, 78, 0.76);
+            }
+            
+            h2 {
+                font-family: Verdana, Geneva, Tahoma, sans-serif;
+                font-size: 1rem;
+                font-weight: bold;
+                text-align: center;
+            }
+            
+            div {
+                text-align-last: center;
+                line-height: 35px;
+            }
+            
+            p {
+                text-align: center;
+            }
+            
+            body {
+                background: white;
+                background-attachment: fixed;
+                background-size: cover;
+            }
+            
+            .register-box {
+                width: 30%;
+                height: 100%;
+                margin: 0 auto;
+                border: 2px solid rgba(26, 22, 78, 0.76);
+                border-radius: 5px;
+            }
+        </style>
+</head>
+
+<body>
+    <div class="register-box">
+        <h1>Registro</h1>
+        <h2>Completa el formulario correctamente</h2>
+        <!--<div class="col-md-6">-->
+        <form id="register">
+            <div class="form-group">
+                <label for="text">Nombre</label><br>
+                <input type="text" class="form-control" id="nombre" name="nombre" maxlenght="100" required>
+            </div>
+            <div class="form-group">
+                <label for="text">Apellido Paterno</label><br>
+                <input type="text" class="form-control" id="apellido1" name="apellido1" max="50" required>
+            </div>
+            <div class="form-group">
+                <label for="text">Apellido Materno</label><br>
+                <input type="text" class="form control" id="Apellido2" name="apellido2" max="50" required>
+            </div>
+            <div class="form-group">
+                <label for="phone">Telefono</label><br>
+                <input type="phone" class="form-control" id="telefono" name="telefono" maxlength="15" required>
+            </div>
+            <div class="form-group">
+                <label for="number">Edad</label><br>
+                <input type="number" class="form-control" id="edad" name="edad" maxlength="15" required>
+            </div>
+
+            <p>Genero:</p>
+            <div class="form-group">
+                <label for="radio">Masculino</label>
+                <input type="radio" class="form-control" id="masculino" name="masculino" required>
+            </div>
+            <div class="form-group">
+                <label for="radio">Femenino</label>
+                <input type="radio" class="form-control" id="femenino" name="femenino" required>
+            </div>
+            <div class="form-group">
+                <label for="radio">Otro</label>
+                <input type="radio" class="form-control" id="otro" name="otro" required>
+            </div><br>
+            <!--<div clas="col -md-6"></div>-->
+            <div class="form-group">
+                <label for="email"> Correo Electronico</label><br>
+                <input type="email" class="form-control" id="email" name="email" maxlength="100" required>
+            </div>
+            <div class="form-group">
+                <label for="textarea"> Escribe una breve descripción de ti</label><br>
+                <textarea name="descripcion" id="descripcion" cols="30" rows="10" maxlength="300"></textarea>
+            </div>
+            <p> Categorias </p>
+            <div class="form-group">
+                <label for="checkbox">Ingeniero</label>
+                <input type="checkbox" class="form-control" id="ingeniero" name="ingeniero" required>
+            </div>
+            <div class="form-group">
+                <label for="checkbox">Abogado</label>
+                <input type="checkbox" class="form-control" id="abogado" name="abogado" required>
+            </div>
+            <div class="form-group">
+                <label for="checkbox">electricista</label>
+                <input type="checkbox" class="form-control" id="electricista" name="electricista" required>
+            </div>
+            <div class="form-group">
+                <label for="checkbox">Medico</label>
+                <input type="checkbox" class="form-control" id="medico" name="medico" required>
+            </div>
+            <div class="form-group">
+                <label for="checkbox">Arquitecto</label>
+                <input type="checkbox" class="form-control" id="arquitecto" name="arquitecto" required>
+            </div>
+            <div class="form-group">
+                <label for="checkbox">Periodista</label>
+                <input type="checkbox" class="form-control" id="periodista" name="periodista" required>
+            </div>
+            <div class="form-group">
+                <label for="checkbox">Investigador</label>
+                <input type="checkbox" class="form-control" id="investigador" name="investigador" required>
+            </div>
+            <div class="form-group">
+                <label for="checkbox">Veterinario</label>
+                <input type="checkbox" class="form-control" id="veterinario" name="veterinario" required>
+            </div>
+            <div class="form-group">
+                <label for="checkbox">Dentista</label>
+                <input type="checkbox" class="form-control" id="dentista" name="dentista" required>
+            </div>
+            <div class="form-group">
+                <label for="checkbox">Músico</label>
+                <input type="checkbox" class="form-control" id="musico" name="musico" required>
+            </div>
+            <div class="form-group">
+                <label for="checkbox">Actor</label>
+                <input type="checkbox" class="form-control" id="actor" name="actor" required>
+            </div>
+            <div class="form-group">
+                <label for=""> Sube una imagen de perfil</label><br>
+                <input type="file" id="imagen" name="imagen">
+            </div>
+            <div class="form-group">
+                <label for="button"></label><br>
+                <input type="submit" value="Enviar" id="button" name="button">
+            </div>
+
+
+        </form>
+    </div>
+
+
+    <script src="js/registerHandler.js"></script>
+>>>>>>> 019ec80c4638e87f6041dc92d2f0f32835afe2ae
 </body>
 
 </html>
