@@ -91,4 +91,57 @@
   color: #000;
 }
 
+.menu nav {
+  width: 20%;
+}
+
+.filter-menu {
+  display: flex;
+  padding: 3% 0% 3% 2%;
+  height: auto;
+  justify-content: space-around;
+  align-content: center;
+  align-items: center;
+}
+.filter-menu div {
+  background-color: #999;
+  width: 100%;
+  min-height: 80vh;
+}
+
+.services-section {
+  display: flex;
+  height: auto;
+  padding: 3% 0% 3% 2%;
+  justify-content: space-around;
+  align-content: center;
+  align-items: center;
+}
+.services-section div {
+  width: 100%;
+  height: 80vh;
+}
+
+#search {
+  width: 90%;
+}
+
+.service-box {
+  width: 100%;
+  height: 8vh;
+  min-height: 10vh;
+  margin: 0;
+  border: 1px solid #000;
+}
+.service-box .media img {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+}
+
+#services-container {
+  width: 100%;
+  height: auto;
+}
+
 /*# sourceMappingURL=services.css.map */
