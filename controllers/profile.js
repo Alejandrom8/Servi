@@ -2,7 +2,7 @@ const express = require("express")
 const router = express.Router();
 
 router.get("/profile", (req, res) => {
-    res.render("profile", {
+    res.render("services/profile", {
         nombre: "Juan Pérez",
         img: "juanperez.jpg",
         servicios: {
@@ -26,3 +26,5 @@ router.get("/profile", (req, res) => {
         points: 5
     })
 });
+
+module.exports = router;
