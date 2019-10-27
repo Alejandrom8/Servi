@@ -23,7 +23,7 @@
             <button class="btn add-button" id="addButton"><i class="far fa-plus-square fa-lg"></i></button>
             <button class="btn slide-button" id="slideButton"><i class="fas fa-bars fa-lg"></i></button>
         </header>
-        <br><br>
+        <br>
         <div class="row col-md-12">
             <aside class="filter-menu col-md-4">
                 <div>
@@ -31,30 +31,37 @@
                 </div>
             </aside>
             <section class="services-section col-md-8" id="services-section">
-                <div>
+                <div class="shower-container">
                     <div class="col-md-12">
                         <form class="form-inline md-form form-sm mt-0">
                             <i class="fas fa-search" aria-hidden="true"></i>
                             <input class="form-control ml-3" type="text" placeholder="Search"
                                 aria-label="Search" id="search">
                         </form>
-
                         <br>
+                    </div>
+                    <div class="services-scroller col-md-12">
                         <div class="col-md-12" id="services-container">
-                            <div class="service-box row">
-                                <div class="col-sm-8">
-                                    <h4>Carpinteria</h4>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sed erat in turpis sollicitudin aliquet nec ut mauris.</p>
+                            <!-- <div class="service-box row">
+                                <div class="description col-sm-8">
+                                    <h4>${object.title}</h4>
+                                    <p>${object.description}</p>
                                 </div>
-                                <div class="col-sm-4">
-                                    <img class="section-icon" src="img/carpinteria.jpg">
+                                <div class="media col-sm-4 row">
+                                    <div class="col-md-12">
+                                        <img class="section-icon" src="img/${object.img}">
+                                    </div>
+                                    <div class="col-md-12">
+                                        <button class="btn btn-primary">Ver</button>
+                                    </div>
                                 </div>
-                            </div>
+                            </div> -->
                         </div>
                     </div>
                 </div>
             </section>
         </div>
     </div>
+    <script src="js/servicesHandler.js"></script>
 </body>
 </html>
