@@ -9,6 +9,7 @@ const main = require("./controllers/main")
 const login = require("./controllers/login")
 const servicios = require("./controllers/servicios")
 const registro = require("./controllers/registro")
+const profile = require("./controllers/profile")
 //aplicacion express
 const server = express()
 
@@ -27,7 +28,8 @@ server.get("/login", login.get)
 server.post("/login", login.post)
 server.get("/registro", registro)
 server.get("/servicios", servicios)
-
+server.get("/profile", profile.normal)
+server.get("/profile/:id", profile.id)
 //carpeta por defecto para cuando no suceda match con ningun otro router
 server.use(express.static("public"))
 server.use(express.static("node_modules"))
