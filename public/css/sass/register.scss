@@ -1,0 +1,45 @@
+         * {
+            font-family: sans-serif;
+        }
+        
+        body {
+            // text-align: center;
+            background-color: rgb(250, 250, 250);
+            background-size: cover;
+        }
+        
+        h3 {
+            border-bottom: 4px rgb(255, 94, 0) solid;
+            // text-align: center;
+            padding-bottom:1rem;
+        }
+        
+        .webpage {
+            width: 95%;
+            height: 100vh;
+            // display: flex;
+            // justify-content: space-around;
+            // align-content: center;
+            // align-items: center;
+            color: black;
+        }
+        
+        div {
+            width: 80%;
+            height: 80%;
+            margin: 0 auto;
+            padding: 1%;
+            background: none;
+        }
+        
+        .borde {
+            border: none;
+            outline: none;
+            background: none;
+            border-bottom: 1px solid #2f2888;
+        }
+        .form-check-input{
+            margin-left:5%;
+        }
+
+@import 'menu';

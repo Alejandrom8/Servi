@@ -1,106 +1,130 @@
 <!DOCTYPE html>
-<html class="no-js">
+<html>
 
 <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <% include ../partials/headers %>
     <title>Inicio de sesión</title>
-    <meta name="description" content="">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="">
-    <style>
-        h1 {
-            font-family: Verdana, Geneva, Tahoma, sans-serif;
-            font-size: 1.5rem;
-            font-weight: bold;
-            text-align: center;
-            border-bottom: 1px solid rgba(26, 22, 78, 0.76);
-        }
-        
-        h2 {
-            font-family: Verdana, Geneva, Tahoma, sans-serif;
-            font-size: 1rem;
-            font-weight: bold;
-            text-align: center;
-        }
-        
-        div {
-            text-align-last: center;
-            line-height: 35px;
-        }
-        
-        p {
-            text-align: center;
-        }
-        
-        body {
-            background: white;
-            background-attachment: fixed;
-            background-size: cover;
-        }
-        
-        .register-box {
-            width: 30%;
-            height: 100%;
-            margin: 0 auto;
-            border: 2px solid rgba(26, 22, 78, 0.76);
-            border-radius: 5px;
-        }
-    </style>
+    <link rel="stylesheet" type="text/css" href="css/register.css">
 </head>
-<div class="register-box">
 
-    <body>
+<body>
+        <% include ../partials/menu %>
+        <br><br><br><br>
+        <div class="register-box">
+        <div class="col-md-6">
+            
+        </div>
+        <div class="col-md-6">
 
-        <h1>Registro</h1>
-        <h2>Completa el formulario correctamente</h2>
+        </div>
+        <h3>Registro</h3>
+        <br>
+        <h4><br>Completa el formulario correctamente</h4>
         <!--<div class="col-md-6">-->
-        <div class="form-group">
-            <label for="text">Nombre</label><br>
-            <input type="text" class="form-control" id="nombre" max="50" required>
-        </div>
-        <div class="form-group">
-            <label for="text">Apellido Paterno</label><br>
-            <input type="text" class="form-control" id="apellido A" max="50" required>
-        </div>
-        <div class="form-group">
-            <label for="text">Apellido Materno</label><br>
-            <input type="text" class="form control" id="Apellido B" max="50" required>
-        </div>
-
-        <p>Genero:</p>
-        <div class="form-group">
-            <label for="checkbox">Masculino</label>
-            <input type="checkbox" class="form-control" id="genero" maxlength="50" required>
-        </div>
-        <div class="form-group">
-            <label for="checkbox">Femenino</label>
-            <input type="checkbox" class="form-control" id="genero" maxlength="50" required>
-        </div><br>
-        <!--<div clas="col -md-6"></div>-->
-        <div class="form-group">
-            <label for="email"> Correo Electronico</label><br>
-            <input type="email" class="form-control" id="email" maxlength="50" required>
-        </div>
-        <div class="form-group">
-            <label for="textarea"> Escribe una breve descripción de ti</label><br>
-            <textarea name="descripcion" id="descripcion" cols="30" rows="10" maxlength="300"></textarea>
-        </div>
-        <div class="form-group">
-            <label for=""> Sube una imagen de perfil</label><br>
-            <input type="file">
-        </div>
-        <div class="form-group">
-            <label for="button"></label><br>
-            <input type="submit" value="Enviar">
-        </div>
-
-
+        <form id="register" class="row">
+            <div class="col-md-8">
+                <div class="form-group">
+                        <label for="text">Nombre</label><br>
+                        <input type="text" class="form-control borde" id="nombre" name="nombre" placeholder="Ingresa tu nombre" maxlenght="100" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="text">Apellido Paterno</label><br>
+                        <input type="text" class="form-control borde" id="apellido1" name="apellido1" placeholder="Ingresa tu apellido" max="50" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="text">Apellido Materno</label><br>
+                        <input type="text" class="form control borde" id="Apellido2" name="apellido2" placeholder="Ingresa tu apellido" max="50" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Telefono</label><br>
+                        <input type="phone" class="form-control borde" id="telefono" name="telefono" placeholder="Ingresa  tu telefono" maxlength="15" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="number">Edad</label><br>
+                        <input type="number" class="form-control borde" id="edad" name="edad" placeholder="Ingresa tu edad" maxlength="15" required>
+                    </div>
+                    <p>Selecciona tu genero:</p>
+                    <div class="form-group">
+                        <label for="radio">Masculino</label>
+                        <input type="radio" class="form-control" id="masculino" name="masculino" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="radio">Femenino</label>
+                        <input type="radio" class="form-control" id="femenino" name="femenino" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="radio">Otro</label>
+                        <input type="radio" class="form-control" id="otro" name="otro" required>
+                    </div><br>
+                    <!--<div clas="col -md-6"></div>-->
+                    <div class="form-group">
+                        <label for="email">Correo Electronico</label><br>
+                        <input type="email" class="form-control borde" id="email" name="email" placeholder="Ingresa tu correo electronico" maxlength="100" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="textarea">Escribe una breve descripción de ti</label><br>
+                        <textarea class="form-control" name="descripcion" id="descripcion" cols="30" rows="10" maxlength="300"></textarea>
+                    </div>
+                    <p> Categorias </p>
+                    <div class="form-check">
+                        <label class="form-check-label" for="checkbox">Ingeniero</label>
+                        <input type="checkbox" class="form-check-input" id="ingeniero" name="ingeniero" required>
+                    </div>
+                    <div class="form-check">
+                        <label class="form-check-label" for="checkbox">Abogado</label>
+                        <input type="checkbox" class="form-check-input" id="abogado" name="abogado" required>
+                    </div>
+                    <div class="form-check">
+                        <label class="form-check-label" for="checkbox">Electricista</label>
+                        <input type="checkbox" class="form-check-input" id="electricista" name="electricista" required>
+                    </div>
+                    <div class="form-check">
+                        <label class="form-check-label" for="checkbox">Medico</label>
+                        <input type="checkbox" class="form-check-input" id="medico" name="medico" required>
+                    </div>
+                    <div class="form-check">
+                        <label class="form-check-label" for="checkbox">Arquitecto</label>
+                        <input type="checkbox" class="form-check-input" id="arquitecto" name="arquitecto" required>
+                    </div>
+                    <div class="form-check">
+                        <label class="form-check-label" for="checkbox">Cocinero</label>
+                        <input type="checkbox" class="form-check-input" id="periodista" name="periodista" required>
+                    </div>
+                    <div class="form-check">
+                        <label class="form-check-label" for="checkbox">Obrería</label>
+                        <input type="checkbox" class="form-check-input" id="investigador" name="investigador" required>
+                    </div>
+                    <div class="form-check">
+                        <label class="form-check-label" for="checkbox">Tecnología</label>
+                        <input type="checkbox" class="form-check-input" id="veterinario" name="veterinario" required>
+                    </div>
+                    <div class="form-check">
+                        <label class="form-check-label" for="checkbox">Construcción</label>
+                        <input type="checkbox" class="form-check-input" id="dentista" name="dentista" required>
+                    </div>
+                    <div class="form-check">
+                        <label class="form-check-label" for="checkbox">Diseño</label>
+                        <input type="checkbox" class="form-check-input" id="musico" name="musico" required>
+                    </div>
+                    <div class="form-check">
+                        <label class="form-check-label" for="checkbox">Arte</label>
+                        <input type="checkbox" class="form-check-input" id="actor" name="actor" required>
+                    </div>
+                    <div class="form-group">
+                        <br><label for=""> Sube una imagen de perfil</label><br>
+                        <input type="file" id="imagen" name="imagen">
+                    </div>
+                    <div class="form-group">
+                        <label for="button"></label><br>
+                        <input type="submit" value="Enviar" id="button" name="button" class="btn btn-primary btn-block">
+                    </div>
+            </div><!-- Termina el lado izquierdo-->
+            <div class="col-md-4">
+                <img src="img/work.jpg" alt="Worker" width="400px">
+            </div>
         </form>
-</div>
+    </div>
 
-
-<script src="" async defer></script>
 </body>
 
 </html>
