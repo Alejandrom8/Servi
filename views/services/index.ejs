@@ -7,30 +7,16 @@
 </head>
 <body>
     <div class="webpage">
-        <header class="menu">
-            <img class="logo" src="img/Tetlay.png">
-            <h5 class="title">Servi</h5>
-            <nav>
-                <ul>
-                    <li class="option">
-                        <a href="/">Servicios</a>
-                    </li>
-                    <li class="option">
-                        <a href="/acerca">Mi perfil</a>
-                    </li>
-                </ul>
-            </nav>
-            <button class="btn add-button" id="addButton"><i class="far fa-plus-square fa-lg"></i></button>
-            <button class="btn slide-button" id="slideButton"><i class="fas fa-bars fa-lg"></i></button>
-        </header>
+        <% include ../partials/menuLogger %>
         <br>
-        <div class="row col-md-12">
-            <aside class="filter-menu col-md-4">
+        <br><br>
+        <div class="row col-md-12" style="margin:0;">
+            <aside class="filter-menu col-md-3">
                 <div>
-                   Hola 
+                    <h4>Filtros de Busqueda</h4>
                 </div>
             </aside>
-            <section class="services-section col-md-8" id="services-section">
+            <section class="services-section col-md-9" id="services-section">
                 <div class="shower-container">
                     <div class="col-md-12">
                         <form class="form-inline md-form form-sm mt-0">

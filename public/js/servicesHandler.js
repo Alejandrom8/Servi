@@ -1,4 +1,46 @@
 const box = document.getElementById("services-container");
+const servidores = [
+    {
+        "title": "Carpinteria",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sed erat in turpis sollicitudin aliquet nec ut mauris.",
+        "img": "carpinteria.jpg"
+    },
+    {
+        "title": "Construccion de Huertos urbanos",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sed erat in turpis sollicitudin aliquet nec ut mauris.",
+        "img": "carpinteria.jpg"
+    },
+    {
+        "title": "Trabajos de herreria",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sed erat in turpis sollicitudin aliquet nec ut mauris.",
+        "img": "carpinteria.jpg"
+    },
+    {
+        "title": "Carpinteria",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sed erat in turpis sollicitudin aliquet nec ut mauris.",
+        "img": "carpinteria.jpg"
+    },
+    {
+        "title": "Carpinteria",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sed erat in turpis sollicitudin aliquet nec ut mauris.",
+        "img": "carpinteria.jpg"
+    },
+    {
+        "title": "Carpinteria",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sed erat in turpis sollicitudin aliquet nec ut mauris.",
+        "img": "carpinteria.jpg"
+    },
+    {
+        "title": "Carpinteria",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sed erat in turpis sollicitudin aliquet nec ut mauris.",
+        "img": "carpinteria.jpg"
+    },
+    {
+        "title": "Carpinteria",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sed erat in turpis sollicitudin aliquet nec ut mauris.",
+        "img": "carpinteria.jpg"
+    }
+];
 
 function convertToHtml(object){
     return `<div class="service-box row">
@@ -37,6 +79,15 @@ async function getDataFromApi(){
     }
 }
 
-(async function(){
-    await getDataFromApi();
-})();
+let finalHtml = "";
+
+servidores.forEach( serv => {
+    finalHtml += convertToHtml(serv)
+});
+
+box.innerHTML = finalHtml;
+
+// (async function(){
+//     await getDataFromApi();
+// })();
+

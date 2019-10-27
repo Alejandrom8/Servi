@@ -96,17 +96,15 @@
 }
 
 .filter-menu {
-  display: flex;
-  padding: 3% 0% 3% 2%;
+  padding: 1% 0% 1% 2%;
   height: auto;
-  justify-content: space-around;
-  align-content: center;
-  align-items: center;
 }
 .filter-menu div {
   background-color: #ddd;
   width: 100%;
-  min-height: 85vh;
+  min-height: 110vh;
+  padding: 8% 4%;
+  color: #555;
 }
 
 .services-section {
@@ -118,6 +116,7 @@
 }
 .services-section .shower-container {
   height: auto;
+  overflow: scroll;
 }
 
 #search {
@@ -125,7 +124,7 @@
 }
 
 .service-box {
-  width: 56vw;
+  width: 50vw;
   height: auto;
   min-height: 10vh;
   padding: 2% 5%;
@@ -142,8 +141,7 @@
 }
 
 .services-scroller {
-  height: 80vh;
-  overflow: scroll;
+  height: 90vh;
 }
 
 /*# sourceMappingURL=services.css.map */
